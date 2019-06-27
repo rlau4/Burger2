@@ -1,6 +1,5 @@
 var mysql = require('mysql');
 
-var connection;
 if (process.env.JAWSDB_URL) {
     // Database is JawsDB on Heroku
    var connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -15,4 +14,4 @@ if (process.env.JAWSDB_URL) {
     })
 };
 
-var mysql = require('mysql');
+module.exports = connection;
